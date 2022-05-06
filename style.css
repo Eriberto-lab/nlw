@@ -2,10 +2,7 @@
     margin: 0;
 }
 
-h1{
-    font-size: 1.5rem;
-    
-}
+
 html, body {
     --grey:hsl(240, 9%, 89%, );
 
@@ -40,25 +37,41 @@ height: 812px;
 
 .avatar{
     width: 10rem;
-    margin: 11.5 0 0 0;
-}
-.avatar > img {
-    width: 10rem;
-    height: 11.5rem;
+    margin: 11.5rem auto 0 ;
     object-fit: cover;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
-a {
-    
-    text-decoration: none;
+.foto{
+    width: 160px;
+    height: 184px;
+}
+h1{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
 }
 
+a {
+    margin-top: 0.25rem;
+    text-decoration: none;
+    color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    margin-top: 2rem;
+}
+ul {
+    margin-top: 4rem;
+    list-style: none;
+    padding: 0;
+    display: flex; /* o display flex deixou os itens alinhados um do lado do  outro e liberou a função gap e justify-content (também serve no display grid)*/
+    gap: 0.5rem; 
+    justify-content: center;
+}
 
 .icon{
     width: 20px;
-}
-.foto{
-    width: 30%;
-    height: 30%;
 }
