@@ -36,6 +36,7 @@
     .then(data => {
         userName.textContent = data.name
         userBio.textContent = data.bio
+        userImage.src = data.avatar_url
     })
     
 
