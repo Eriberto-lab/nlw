@@ -16,11 +16,11 @@
 
         <div class="conteiner">
             <div class="avatar">
-                <img class="foto" src="https://cdn.icon-icons.com/icons2/1996/PNG/512/code_development_github_open_source_programming_source_icon_123274.png" alt="foto pessoal">
+                <img id="foto" src="https://cdn.icon-icons.com/icons2/1996/PNG/512/code_development_github_open_source_programming_source_icon_123274.png" alt="foto pessoal">
             </div>
             <h1 id="userName">Eriberto Lima</h1>
             <a href="https://www.instagram.com/erinhofl/"> <img class="icon"  src="https://cdn.icon-icons.com/icons2/1996/PNG/512/code_development_github_open_source_programming_source_icon_123274.png" alt="logo github"> Eriberto Lab</a>
-            <p>Desafie-se, aventure-se e coloque-se em situações novas. Minha missão na vida não é apenas sobreviver, mas prosperar.</p>
+            <p id="userBio">Desafie-se, aventure-se e coloque-se em situações novas. Minha missão na vida não é apenas sobreviver, mas prosperar.</p>
             <ul id="socialLinks">
                 <li class="youtube">
                     <a href="youtube.com">
@@ -49,56 +49,7 @@
         </div> 
     </main>
     
-    <script>
-
- const LinksSocialMedia = {
-   github:  "RocketSeat",
-   youtube: "RocketSeat",
-   facebook: "RocketSeat",
-   instagram: "Erinhofl",
-   twitter: "EribertoLima95"
- }
-
-
- // acessando o DOM
- function changeUserName(){
-document.getElementById('userName').textContent = 'Eri-lab'
-
-userName.textContent = 'Eri-lab' //consigo usar essa forma simplificado pq o userName é um id, sendo assim o JS reconhece tudo que vem antes do *.* como um id
-}
-changeUserName()
-
-function changeScocialMediaLinks(){
-
-    for(let li of socialLinks.children){
-
-        const social = li.getAttribute('class')
-
-
-
-        li.children[0].href = `https://www.${social}.com/${LinksSocialMedia{social}}`
-        alert(li.children[0])
-    }
-}
-
-changeScocialMediaLinks()
-
-
-
-
-//function changeScocialMediaLinks (){
-
-   // for(let i = 0; i <= 10; i++){
-       // alert(i)
- //   }
-//}
-
-// let i = 0; variavel criada com o valor zero, i <=10; enquanto a variavel i for menor ou igual a 10 o for vai rodar, i++ significa que toda vez que o for estiver rodando vai ser somado +1 na variavel i, ou seja i+1.
-
-// i+1 é a mesma coisa que i++
-
-
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
